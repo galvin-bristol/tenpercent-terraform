@@ -3,6 +3,6 @@ terraform {
 }
 
 resource "local_file" "left" {
-    content     = "leftfile"
+    content     = "leftfile2"
     filename = "${path.module}/left.txt"
 }
