@@ -1,0 +1,4 @@
+.terraform
+terraform.tfstate
+terraform/modules/leftfile/left.txt
+terraform/modules/rightfile/right.txt
