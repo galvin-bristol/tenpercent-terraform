@@ -48,6 +48,8 @@ on:
   push:
     branches:
     - main
+    paths:
+      - 'terraform/modules/rightfile/**'
   pull_request:
 
 jobs:

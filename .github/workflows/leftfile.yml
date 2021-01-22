@@ -5,6 +5,8 @@ on:
   push:
     branches:
     - main
+    paths:
+      - 'terraform/modules/leftfile/**'
   pull_request:
 
 jobs:
