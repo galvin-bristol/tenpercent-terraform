@@ -52,7 +52,7 @@ on:
 
 jobs:
   terraform-leftfile:
-    name: 'Terraform'
+    name: 'Terraform Left File'
     runs-on: ubuntu-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
@@ -72,7 +72,7 @@ jobs:
       run: terraform init
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt -check
+      run: terraform fmt -check -diff
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
@@ -83,7 +83,7 @@ jobs:
       run: terraform apply -auto-approve
 
   terraform-rightfile:
-    name: 'Terraform'
+    name: 'Terraform Right File'
     runs-on: ubuntu-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
